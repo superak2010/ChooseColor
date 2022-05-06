@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0240"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/winlose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        tools:text="THẮNG"
+        android:textSize="50sp"
+        tools:textColor="#00FF00"/>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/blue1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00AAFF"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_marginStart="10dp"
+                android:id="@+id/blue2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00AAFF"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/bluedifferent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#087AD1"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_marginStart="10dp"
+                android:id="@+id/blue4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00AAFF"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
